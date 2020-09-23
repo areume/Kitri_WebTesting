@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function sub() {
+			var arr=new Array();
+			
+			var div=document.createElement("div");
+			
+			//div.align="center";
+			//div.style.color="blue";
+			//div.className="abc";		// class 지정 가능하다.
+			//div.setAttribute("class","abc");
+			
+			//div.setAttribute("align","center");
+			//div.setAttribute("style","color:blue");
+			//div.setAttribute("onclick","xyz('apple')");
+			
+			//div.innerHTML="도트 연산자 - 점심시간";
+ 			//div.innerHTML="setAttribute - 점심시간";
+			
+			
+ 			var num1=10;
+ 			var num2=20
+ 			div.setAttribute("onclick","xyz('"+num1+"')");	// num은 자바 스크립트에서 사용되는 명령어이므로 따옴표로 묶어주어야 한다.
+			
+// 			div.onclick=xyz(num1,num2);
+// 			//익명 함수 - 한번만 쓰여진다.
+// 			div.onclick=function (){
+// 				xyz(num1,num2);
+// 			}		
+			
+// 			arr.push(div.align);
+// 			arr.push(div.getAttribute("align"));
+// 			alert(arr.join("\n"));
+
+			
+ 			document.body.appendChild(div);
+		}
+		
+		function xyz(a,b) {
+			alert(a+" "+b);
+		}
+		
+	</script>
+</head>
+<body onload="sub()">
+</body>
+</html>

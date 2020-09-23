@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	
+	<script type="text/javascript">
+		function myFunc() {
+			window.open("http://localhost:8181/webTesting/JavaScript/06_IdCheck.html","","width=300px, height=100px");
+			// "주소","윈도우이름","가로세로스크롤"
+		}
+		
+		function myNaver() {
+			window.open("https://www.naver.com","","width=500px, height=500px, scrollbars=yes");
+		}
+		
+	</script>
+	
+</head>
+
+<body onload="myNaver()">
+	<span>아이디 : </span>
+	<input type="text" name="id">
+	<input type="button" value="아이디 확인" onclick="myFunc()">
+</body>
+</html>

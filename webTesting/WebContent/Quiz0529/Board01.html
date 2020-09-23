@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>게시판</title>
+		<link rel="stylesheet" href="BoardStyle.css">
+	</head>
+	<body>
+	
+		<div id="board">
+			<div id="sub">
+				<a href="#">글목록</a>
+			</div>
+		
+			<div id="content">
+			
+				<!-- 작성자 -->
+				<div class="category">
+					<span class="index">
+						<label>작성자</label>
+					</span>
+				
+					<span class="userInfo">
+						&nbsp;<input type="text" size="18" name="writer">
+					</span>
+				</div>
+			
+				<!-- 제목 -->
+				<div class="category">
+					<span class="index">
+						<label>제목</label>
+					</span>
+				
+					<span class="userInfo">
+						&nbsp;<input type="text" size="30" name="title">
+					</span>
+				</div>
+				
+				<!-- 이메일 -->
+				<div class="category">
+					<span class="index">
+						<label>이메일</label>
+					</span>
+				
+					<span class="userInfo">
+						&nbsp;<input type="text" size="30" name="email">
+					</span>
+				</div>
+				
+				<!-- 내용 -->
+				<div class="category">
+					<span class="index" style="height: 170px;">
+						<label>내용</label>
+					</span>
+				
+					<span class="userInfo" style="height: 170px;">
+						&nbsp;<textarea rows="10" cols="50" style="margin: 5px 0px;" name="text"></textarea>
+					</span>
+				</div>
+				
+				<!-- 비밀번호 -->
+				<div class="category">
+					<span class="index" style="border-bottom-width: 1px">
+						<label>비밀번호</label>
+					</span>
+				
+					<span class="userInfo" style="border-bottom-width: 1px">
+						&nbsp;<input type="password" size="18">
+					</span>
+				</div>
+	
+			</div>
+	
+			<!-- 버튼 -->
+			<div id="functions">
+				<input type="submit" value="글쓰기">
+				<input type="reset" value="다시작성">
+				<input type="button" value="목록보기">
+			</div>
+	
+		</div>
+	
+	</body>
+</html>

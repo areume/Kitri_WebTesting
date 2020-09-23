@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* footer_ad 구역 */
+footer > #footer_ad1 {
+	background-color: #FFEFF3;
+}
+
+footer > #footer_ad1 > .ad1_container {
+	width: 980px;
+	margin: 0px auto;
+}
+
+
+/* service 구역*/
+footer > #service {	
+	width: 100%;
+	height: 230px;
+	background-color: #262424;	
+	align-self: center;
+	margin: 0px;
+}
+
+footer > #service > #footer_question {
+	width: 800px;
+	height: 60px;
+	margin: 0px auto;
+}
+
+footer > #service > #footer_question ul {
+	margin: 0px;
+}
+
+footer > #service > #footer_question li {
+	width: 230px;
+	height: 40px;
+	margin: 50px 10px 35px 0px;
+
+	background-color: transparent;
+	border: 2px solid #8E8787; 
+	float: left;
+}
+
+footer > #service > #footer_question li > a {
+	color: #8E8787;
+	font-size: 16px;
+	font-weight: bold;
+	
+	text-align: center;
+	line-height: 40px;
+}
+
+footer > #service > #footer_question li > a:hover {
+	color: red;
+}
+
+footer > #service > #footer_question li:first-child > a {
+	margin-left: 55px;
+}
+
+footer > #service > #footer_question li:hover {
+	border-color: red;
+}
+
+footer > #service > #footer_question li:first-child ~ li a {
+	margin-left: 65px;
+}
+
+footer > #service > #footer_nav {
+	width: 1000px;
+	height: 34px;
+	margin: 0px auto;
+}
+
+footer > #service > #footer_nav li {	
+	width: 180px;	
+	margin-right: 10px;	
+	border-left: 1px solid #8E8787;
+	border-left-style: dotted;	
+	text-align: center;
+	float: left;	
+}
+
+footer > #service > #footer_nav li:first-child {
+	border-left-width: 0px;		
+}
+
+footer > #service > #footer_nav li a {
+	color: #8E8787;
+	font-size: 14px;
+}
+
+footer > #service > #copyright {
+	width: 285px;
+	height: 50px;
+	margin: 0px auto;
+	
+	color: #8E8787;
+	font-size: 14px;
+	
+	text-align: center;
+	line-height: 40px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript" src="xhr.js"></script>
+	<script type="text/javascript">
+		function toServer() {
+			var message=document.getElementById("createForm").message.value;
+			var params='message='+message;	// 넘어오는 텍스트와 넘겨주는 주소가 매번 다르므로 밖으로 뺏다. 공통적인 것은 자바스크립트 파일에 작성.
+			var url="command.jsp";
+			
+			sendRequest("GET",url,params,fromServer);
+		}
+		
+		function fromServer() {
+			if(xhr.readyState==4 && xhr.status==200) {
+				
+				arr.push(xhr.responseText);
+				alert(arr.join("\n"));
+				var disp=document.getElementById("disp");
+			}
+		}
+	</script>
+</head>
+<body>
+	<form id="createForm">
+		<input type="text" name="message">
+		<input type="button" value="입력" onclick="toServer()">
+	</form><br><br>
+	
+	<div id="disp"></div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	
+	<script type="text/javascript">
+		
+		// 4. Array 객체 
+// 		var su=[1,2,3,4];
+// 		var strArr=new Array("사과","바나나","딸기");
+// 		document.write(su+"<br>"+strArr+"<br><br>");
+// 		document.write(su.concat(strArr)+"<br><br>");  // su 배열 뒤에 strArr 배열 합치기.
+// 		document.write(strArr.join("/")+"<br><br>");   // 배열 요소 사이에 /를 삽입.
+// 		document.write(strArr.slice(1)+"<br><br>");	   // 1번 인텍스부터 찍기.
+// 		document.write(strArr.sort()+"<br><br>");
+// 		document.write(strArr.reverse()+"<br><br>");
+		
+		// 5. Date 객체는 JSTL에서 할 예정.
+		// 6. Global (내장 함수)
+// 		var su="77";
+// 		document.write((parseInt(su)+100)+"<br><br>");
+		
+		// 자바와 자바스크립트 데이터 전달 시 한글, 특수문자 처리.
+		var url="!#%&#()/>@";
+		var enc=encodeURI(url);
+		var dec=decodeURI(enc);
+		document.write(url+"<br>"+enc+"<br>"+dec+"<br><br>");
+		
+		var c=encodeURIComponent(url);
+		var d=decodeURIComponent(c);
+		document.write(c+"<br>"+d+"<br><br>");
+		
+		var str="안녕하세요";
+		var e=encodeURI(str);
+		var f=decodeURI(e);
+		document.write(str+"<br>"+e+"<br>"+f+"<br>");
+		
+	</script>
+	
+</head>
+<body>
+
+</body>
+</html>

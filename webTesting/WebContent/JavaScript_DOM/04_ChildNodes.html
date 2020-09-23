@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function fun() {
+			var arr=new Array();
+			
+			var div=document.getElementsByTagName("div");
+			arr.push(div[0].nodeName);
+			arr.push(div[0].nodeValue);
+			arr.push("\n");
+			arr.push(div[0].childNodes[0].nodeName); 	// chileNodes는 배열로 반환.
+			arr.push(div[0].childNodes[0].nodeValue);
+			alert(arr);
+			
+			var result=document.getElementById("result");
+			result.innerHTML=div[0].childNodes[0].nodeValue;
+		}
+		
+		function sub() {
+			var arr=new Array();
+			
+			var melon=document.getElementById("melon");
+			arr.push(melon.nodeName+", "+melon.nodeValue);
+			arr.push(melon.childNodes.length);
+			
+			for(var i=0;i<melon.childNodes.length;i++) { // length는 7.
+				// arr.push(melon.childNodes[i].nodeName);	 // #text, SPAN, #text, SPAN, #text, SPAN, #text > #text는 Enter 의미. Enter 키 입력도 자식으로 받는다.
+				// arr.push(melon.childNodes[i].childNodes[0].nodeValue); // 줄 바꿈 자식으로 읽음.
+			}
+			
+			var span=melon.getElementsByTagName("span");
+			for(var i=0;i<span.length;i++) {
+				arr.push(span[i].childNodes[0].nodeValue);
+			}
+			
+			alert(arr.join("\n"));
+		}
+		
+		function met() {
+			var arr=new Array();
+			
+			var apple=document.getElementById("apple");
+			var appleChild=apple.childNodes;
+			for(var i=0;i<appleChild.length;i++) {
+				arr.push(appleChild[i].nodeName+", "+appleChild[i].nodeValue+" "+appleChild[i].nodeType);	
+			}
+			
+			var span=apple.getElementsByTagName("span");
+			arr.push(span[0].childNodes[0].nodeValue);
+			
+			var i=apple.getElementsByTagName("i");
+			arr.push(i[0].childNodes[0].nodeValue);
+			
+			var b=apple.getElementsByTagName("b");
+			arr.push(b[0].childNodes[0].nodeValue);
+			
+			alert(arr.join("\n"));
+			
+		}
+		
+		function tagMod() {
+			var arr=new Array();
+			
+			var apple=document.getElementById("apple");
+			var appleChild=apple.childNodes;
+			
+			for(var i=0;i<appleChild.length;i++) {
+				if(appleChild[i].nodeType==1) {
+					arr.push(appleChild[i].childNodes[0].nodeValue);
+				}
+			}
+			
+			
+			alert(arr.join("\n"));
+		}
+	</script>
+</head>
+<body>
+	<div>나는 사과를 좋아합니다.</div>
+	<div id="result"></div><br>
+	<input type="button" value="클릭" onclick="fun()"/><br><br>
+	
+	<!-- span 태그의 value는 null, '가'의 nodeName은 text nodeValue는 가-->
+	<span id="melon">
+		<span>가</span>	
+		<span>나</span>
+		<span>다</span>
+	</span>
+	<input type="button" value="클릭" onclick="sub()"/><br><br>
+	
+	<div id="apple">
+		<span>A</span>
+		<i>B</i>
+		<b>C</b>
+	</div>
+	<input type="button" value="클릭" onclick="met()"/>
+	<input type="button" value="클릭" onclick="tagMod()"/><br><br>
+</body>
+</html>

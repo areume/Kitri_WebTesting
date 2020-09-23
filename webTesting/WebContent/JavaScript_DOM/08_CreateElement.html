@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+	
+		/* 내가 만든 태그에 데이터 붙이기? */
+		function sub() {
+			var divNode=document.createElement("div");
+			divNode.align="center";
+			
+			var spanNode=document.createElement("span");
+			spanNode.style.color="red";
+			spanNode.innerHTML="안녕하세요";
+			
+			divNode.appendChild(spanNode);
+			
+			var disp=document.getElementById("disp");
+			disp.appendChild(divNode);
+		}
+	
+	</script>
+</head>
+<body onload="sub()">
+	<!-- 실행 후 검사로 HTML 코드 확인해보기 -->
+	<div id="disp"></div>
+	
+</body>
+</html>

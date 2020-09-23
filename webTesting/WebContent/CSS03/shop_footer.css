@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+#footer {
+	width: 1000px;
+	margin: 0px auto;
+	
+	border: 0px solid red;
+	
+	overflow: hidden;
+}
+
+#footer > div {
+	height: 80px;
+	
+	border: 1px solid #CCCCCC;
+	
+	float: left;
+	
+	text-align: center;
+	line-height: 80px;
+}
+
+#footer > div:nth-child(1) {
+	width: 200px;
+	float: left;
+	
+	margin-right: 2px;
+}
+
+#footer > div:nth-child(2) {
+	width: 490px;
+	margin-right: 2px;
+}
+
+#footer > div:nth-child(3) {
+	width: 300px;
+	
+}
+
+#footer > div:nth-child(4) {
+	width: 1000px;
+	
+	clear: both; /* float기능을 삭제 */
+	
+	margin-top: 8px;
+	
+	background-color: #242424;
+	color: #FFFFFF;
+}

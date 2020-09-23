@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>OverFlow</title>
+
+<style type="text/css">
+
+	#row1 {
+		width: 500px;				/* height 생략 시, 자식의 height 크기에 맞춰진다. */
+		margin: 0px auto;
+		border: 1px solid red;
+		
+	}
+
+	#row1 > #first {
+		width: 100px;
+		height: 100px;
+		
+		margin: 5px;
+		
+		border: 1px solid #CCCCCC;
+	}
+	
+	#row1 > #second {
+		width: 100px;
+		height: 200px;
+		
+		margin: 5px;
+		
+		border: 1px solid #CCCCDD;
+	}
+	
+	#row2 {
+		width: 500px;
+		margin: 0px auto;
+		border: 1px solid blue;
+		
+		margin-top: 10px;
+		
+		overflow: hidden;  /* 자식한테 자동으로 맞춰라 */
+	}
+	
+	#row2 > #first, #row2 > #second {
+		width: 100px;
+		height: 100px;
+		
+		margin: 5px;
+		
+		border: 1px solid #CCCCCC;
+		
+		float: right;	/* row2 블럭의 height가 자동으로 계산되지 않는다. */
+
+	}
+
+</style>
+
+</head>
+<body>
+    <div id="row1">
+        <div id="first">first</div>
+        <div id="second">second</div>
+    </div>
+
+    <div id="row2">
+        <div id="first">first</div>
+        <div id="second">second</div>
+    </div>
+</body>
+</html>

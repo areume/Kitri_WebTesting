@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function sub() {
+			var arr=new Array();
+			
+			var second=document.getElementById("second");
+			var older=second.previousSibling;
+			var olderValue=getPreviousSibling(older);
+			arr.push(olderValue);
+			
+			var young=second.nextSibling;
+			var youngValue=getNextSibling(young);
+			arr.push(youngValue);
+			
+			alert(arr.join("\n"));			
+		}
+		
+		function getPreviousSibling(node) {
+			if(node.nodeType==1) {
+				return node.childNodes[0].nodeValue;
+			}
+			if(node.nodeType==3) {
+				return node.previousSibling.childNodes[0].nodeValue;
+			}
+		}
+		
+		function getNextSibling(node) {
+			if(node.nodeType==1) {
+				return node.childNodes[0].nodeValue;
+			}
+			if(node.nodeType==3) {
+				return node.nextSibling.childNodes[0].nodeValue;
+			}
+		}
+	</script>
+</head>
+<body onload="sub()">
+	<div id="grandfather">
+		<div id="father">
+			<span id="first">첫째입니다.</span>
+			<span id="second">둘째입니다.</span>
+			<span id="third">셋째입니다.</span>
+		</div>
+	</div>
+</body>
+</html>

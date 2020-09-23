@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>	
+		<script type="text/javascript">
+			/* 자바스크립트의 자료형은 모두 객체이다. */
+			var su=10;
+			var value=new Number(20);
+			document.write(su+"<br>"+value+"<br><br>");
+			
+			// 1. Number 객체
+			var num=123.45678;
+			document.write(num.toFixed(3)+"<br>");
+			document.write(num.toPrecision(10)+"<br>");  // 빈자리는 0으로 채운다.
+			document.write(num.toPrecision(5)+"<br><br>");   // 짧으면 자동으로 반올림.
+			document.write(Number.MAX_VALUE+"<br>");
+			document.write(Number.MIN_VALUE+"<br><br>");
+			
+			// 2. Math 객체
+			document.write("절대값 : "+Math.abs(-15)+"<br>");
+			document.write("최대값 : "+Math.max(10,20,30)+"<br>");
+			document.write("최소값 : "+Math.min(-10,-15,-20)+"<br>");
+			document.write("누승 : "+Math.pow(2,3)+"<br>");
+			document.write("랜덤 : "+Math.random()+"<br><br>");
+			
+			// 3. String 객체
+			var abc="안녕하세요";
+			var xyz=new String("반갑습니다");
+			document.write(abc+"<br>"+xyz+"<br><br>");
+			
+			var str="ABCDEFGHIJ";
+			document.write(str.substring(6)+"<br>");
+			document.write(str.substring(2,6)+"<br><br>");
+			
+			var email="hong@naver.com";
+			document.write(email.toLowerCase()+"<br>"+email.toUpperCase()+"<br>");
+			document.write(email.indexOf("@")+"<br>");
+			document.write(email.charAt(2)+"<br>");
+			
+			var result="abc,def,123";
+			var array=result.split(",");
+			for(var i=0;i<array.length;i++) {
+				document.write(array[i]+"<br>");
+			}		
+		</script>	
+	</head>
+	<body>	
+	</body>
+</html>

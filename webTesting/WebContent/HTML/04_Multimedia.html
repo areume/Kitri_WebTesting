@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지와 오디오 동영상</title>
+</head>
+<body>
+
+<h3>이미지</h3>
+	<!-- 상대경로, 절대경로
+	절대경로: C:\lhe\java\fileUpDown\input 이런거
+	상대경로: 나를 중심으로
+			 ./: 현재폴더 (생략가능)
+			 ../: 상위폴더 -->
+	
+	<img src="./pengsoo.jpg" width="400" height="300" alt="이미지 없을때 나오는 메세지"/>
+	<br>
+	
+	<img src=" ./../img/test/pengsoo.jpg" width="300" height="200"/>
+	<br>
+	
+	<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+	<br>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQnnaBOtdNuLejL3GOF51u1rtKiFBRWj2_wxLp0XL9FwVXcYjRG&usqp=CAU">
+
+	<br>
+	
+	<h3>오디오</h3>
+	<audio controls autoplay loop>
+		<source src="./../img/Sleep Away.mp3" type ="audio/mpeg"/>
+	</audio>
+	
+	<h3>비디오</h3>
+	<video autoplay="autoplay" controls="controls" >
+		<source src ="./../img/penguins.mp4" type="video/mp4">
+	</video>
+	
+	
+	
+</body>
+</html>

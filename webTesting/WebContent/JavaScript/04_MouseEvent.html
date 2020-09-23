@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	
+	<script type="text/javascript">
+		
+		function myClick() {
+			window.alert("myClick Function"); // BOM 객체 중 window 내장객체(생략가능)의 함수를 호출.
+			// 브라우저에서 제공하는 내장객체의 함수를 호출했으므로 브라우저마다 알림창의 외형이 다르다.
+		}
+		
+		function mySub() {
+			window.alert("mySub() Function");
+		}
+		
+		function dblSub() {
+			window.alert("dblSub() Function");
+		}
+		
+		function bigText(obj) {
+			obj.style.color="red";
+			obj.style.fontSize="40px";
+			obj.style.fontFamily="궁서체";
+			obj.href="https://www.naver.com";
+		}
+		
+		function normalText(obj) {
+			obj.style.color="blue";
+			obj.style.fontSize="16px";
+			obj.style.fontFamily="맑은고딕";
+		}
+		
+		function apple() {
+			var value=window.prompt("원하는 숫자를 입력하세요.","정수형 1~10까지만 입력하세요.");
+			// 취소 버튼을 누르면 null 값이 전달된다.
+			window.alert(++value);
+			//documemt.write(value); // 새로운 페이지에 값을 출력한다.
+		}
+		
+		function banana() {
+			var result=window.confirm("정말로 삭제하시겠습니까?");
+			//window.alert(result); // 확인은 true 취소는 false
+			if(result) {
+				alert("삭제되었습니다.");
+			}else {
+				alert("삭제가 취소되었습니다.");
+			}
+		}
+		
+	</script>
+	
+</head>
+
+<body>
+	<!-- 마우스 이벤트 : onclick(mousedown, mouseup), ondblclick, CSS :hover(mouseover, mouseout) -->
+	
+	<input type="button" value="확인하세요." onclick="">
+	<br><br>
+	<span onclick="myClick()" style="cursor: pointer;">배고파,,,,</span>
+	<br><br>
+	
+	<input type="button" value="확인하세요!" onmousedown="mySub()">
+	<input type="button" value="확인하세요!" onmouseup="mySub()">
+	<input type="button" value="확인하세요!" ondblclick="dblSub()">
+	<br><br>
+	
+	<a href="#" style="text-decoration: none;" onmouseover="bigText(this)" onmouseout="normalText(this)">안녕하세요</a>
+	<br><br>
+	
+	<input type="button" value="확인하세요!" onclick="apple()">
+	<input type="button" value="확인하세요!" onclick="banana()">
+	
+</body>
+</html>

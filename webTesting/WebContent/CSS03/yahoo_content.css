@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+#content {
+	width: 1000px;
+	
+	margin: 0px auto;
+	border: 0px solid red;	
+	
+	overflow: hidden;
+}
+
+#content > #main_nav {
+	width: 155px;
+	
+	float: left;
+	
+	border: 0px solid blue;
+}
+
+#content > #main_nav li {
+	height: 35px;
+}
+
+#content > #main {
+	width: 600px;
+	
+	float: left;
+	
+	border: 0px solid blue;
+}
+
+#content > #main > div {
+	border: 1px solid #CCCCCC;
+	margin-top: 5px;
+	text-align: center;
+}
+
+#content > #main > div:nth-child(1) {
+	height: 300px;
+	line-height: 300px;
+}
+
+#content > #main > div:nth-child(2) {
+	height: 150px;
+	line-height: 150px;
+}
+
+#content > #main > div:nth-child(3) {
+	height: 50px;
+
+	background-color: #500095;
+}
+
+#content > #main > div:nth-child(3) li {
+	float: left;
+	
+	margin-right: 30px;
+	
+	color: #FFFFFF;
+	
+	font-size: 1.0em;	
+}
+
+#content > #main > div:nth-child(3) ~ div {
+	height: 120px;
+	line-height: 120px;
+}
+
+#content > #main_banner {
+	width: 230px;
+	float: left;
+	border: 0px solid blue;
+	
+	margin-left: 10px;
+}
+
+#content > #main_banner > div {
+	border: 1px solid #CCCCCC;
+	
+	text-align: center;
+	
+	margin-top: 5px;
+}
+
+#content > #main_banner > div:nth-child(1) {
+	height: 100px;
+	line-height: 100px;
+}
+
+#content > #main_banner > div:nth-child(2) {
+	height: 100px;
+	line-height: 100px;
+}
+
+#content > #main_banner > div:nth-child(3) {
+	height: 150px;
+	line-height: 150px;
+}
+
+#content > #main_banner > div:nth-child(4) {
+	height: 300px;
+	line-height: 300px;
+}
+
+#content > #main_banner > div:nth-child(5) {
+	height: 300px;
+	line-height: 300px;
+}

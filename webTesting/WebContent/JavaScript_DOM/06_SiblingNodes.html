@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function sub() {
+			var arr=new Array();
+			
+			var second=document.getElementById("second");
+			var older=second.previousSibling;
+			var young=second.nextSibling;
+			arr.push(older.nodeType+" "+young.nodeType); // 3,3 : Enter 형제로 인식한다. nodeType 값을 읽고 태그 속성인 형제를 가져오는 함수를 작성.
+			arr.push(older.previousSibling.nodeType+" "+young.nextSibling.nodeType); // 1,1
+
+			alert(arr.join("\n"));			
+		}
+	</script>
+</head>
+<body onload="sub()">
+
+	<div id="grandfather">
+		<div id="father">
+			<span id="first">첫째입니다.</span>
+			<span id="second">둘째입니다.</span>
+			<span id="third">셋째입니다.</span>
+		</div>
+	</div>
+</body>
+</html>

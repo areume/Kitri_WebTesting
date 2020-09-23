@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+body { margin: 0px; padding: 0px; }
+a { text-decoration: none; }
+li { list-style-type: none; }
+
+/* header my_service row1 구역 */
+header > #row1 {
+	width: 100%;
+	background-color: #262424;
+}
+
+header > #row1 > #my_service {
+	width: 1030px;
+	height: 37px;
+	margin: 0px auto;
+	
+	overflow: hidden;
+}
+
+header > #row1 > #my_service > .daum {	
+	margin-left: 13px;
+	margin-top: 5px;
+	float: left;	
+}
+
+header > #row1 > #my_service > #functions {
+	float: right;
+}
+
+header > #row1 > #my_service > #functions ul {
+	width: 110px;
+	height: 37px;
+	margin: 0px;
+	padding: 0px;
+}
+
+header > #row1 > #my_service > #functions > .func2 ul {
+	width: 90px;
+}
+
+header > #row1 > #my_service > #functions .func2,
+header > #row1 > #my_service > #functions .func1 {
+	float: right;
+}
+
+header > #row1 > #my_service > #functions div li {
+	margin-right: 18px;
+	line-height: 37px;
+	float: left;
+}
+
+header > #row1 > #my_service > #functions .func1 button {
+	color: #a9a9a9;
+	border-width: 0px;
+	background-color: #383A3F;
+}
+
+header > #row1 > #my_service > #functions .func1 li:nth-child(2) {
+	margin-top: 3px;
+}
+
+header > #row1 > #my_service > #functions .func2 li {
+	margin-top: 3px;
+}
+
+
+/* header my_service row2 구역 */
+header > #row2 {
+	width: 100%;
+	height: 90px;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+header > #row2 > #header_menu {
+	width: 1030px;
+	height: 90px;
+	
+	margin: 0px auto;	
+	
+	overflow: hidden;
+}
+
+header > #row2 > #header_menu .webtoon {
+	margin: 29.5px 0px 10px 20.5px;	
+	
+	float: left;
+}
+
+header > #row2 > #header_menu .webtoon_menu {
+	height: 90px;
+	
+	margin-left: 160px;
+	
+	float: left;
+	line-height: 90px;
+}
+
+header > #row2 > #header_menu .webtoon_menu > ul {
+	height: 90px;
+	margin: 0px;
+	padding: 0px;
+}
+
+header > #row2 > #header_menu .webtoon_menu li {
+	width: 100px;
+	height: 90px;
+	text-align: center;
+	float: left;
+}
+
+header > #row2 > #header_menu .webtoon_menu li a {
+	color: #000000;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+header > #row2 > #header_menu .webtoon_research {
+	width: 200px;
+	height: 90px;
+	margin-left: 150px;	
+	float: left;
+}
+
+header > #row2 > #header_menu .webtoon_research > ul{
+	width: 220px;
+	height: 90px;
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+header > #row2 > #header_menu .webtoon_research li {
+
+	height: 30px;
+	margin-top: 30px;
+	
+	text-align: center;
+	line-height: 30px;
+	
+	float: left;
+	border: 1px solid #CCCCCC;
+}
+
+header > #row2 > #header_menu .webtoon_research li:nth-child(1) {
+
+	width: 80px;
+	
+	margin-left: 50px;
+	margin-right: 10px;
+	text-align: center;
+	
+	float: left;
+	
+	font-size: 13px;
+	font-weight: bold;
+	border-radius: 15px;
+}
+
+header > #row2 > #header_menu .webtoon_research li:nth-child(1) > img {
+	width: 26px;
+	height: 26px;
+	
+	margin-top: 2px;
+	margin-left: 5px;
+	
+	text-align: center;
+	
+	float: left;
+}
+
+header > #row2 > #header_menu .webtoon_research li:nth-child(2) {
+	width: 30px;
+	border-radius: 15px;
+}
+
+header > #row2 > #header_menu .webtoon_research li:nth-child(2) > a {
+	width: 22px;
+	height: 22px;
+}
+
+header > #row2 > #header_menu .webtoon_research li:nth-child(2) img {
+	width: 21px;
+	height: 21px;
+	margin-top: 3px;
+	margin-left: 2px;
+}
+
+

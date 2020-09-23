@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	
+	<script type="text/javascript">
+			
+		/* 태그 이름으로 뽑아오기 */
+		function test() {
+			var div=document.getElementsByTagName("div");	// 태그 이름이 div인 Element를 받아오겠다.
+			alert(div.length);
+			div[0].innerHTML="사과";	// 선택한 태그 안의 HTML 코드를 지정.
+			div[1].innerHTML="딸기";
+			div[2].innerHTML="포도";
+		}
+		
+		function sub() {
+			var span=document.getElementsByTagName("span");
+			for(var i=0;i<span.length;i++) {
+				span[i].innerHTML="apple"+i;
+			}
+		}
+		
+		/* 부모 태그 사용해서 뽑아오기 */
+		function fun() {
+			var font=document.getElementsByTagName("font");
+			var span=font[0].getElementsByTagName("span");
+			for(var i=0;i<span.length;i++) {
+				span[i].innerHTML="banana"+i;
+			}
+		}
+	</script>
+	
+</head>
+<body>
+	<!-- 
+	<div style="font-size: 20px; color: red;"></div>
+	<div></div>
+	<div></div>
+	
+	<input type="button" value="클릭" onclick="test()"><br><br>
+	
+	-->
+
+	<font>
+		<span></span>
+		<span></span>
+<!-- 		<input type="button" value="span" onclick="sub()"> -->
+		<input type="button" value="font-span" onclick="fun()">
+	</font>
+	
+</body>
+</html>

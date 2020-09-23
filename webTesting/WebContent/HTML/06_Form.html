@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>	
+		<!-- Get 방식은 웹브라우저 주소창을 통해 데이터가 전달	/255자이내  데이터만 가능
+			 Post방식은 웹브라우저 헤더 부분을 통해 데이터 전달/우리눈에 안보이기 때문에 보안이 된다. -->
+	<form action="https://www.naver.com" method="get" >
+		<span>아이디</span>
+		<input type ="text" name="id"/><br><br>
+		<span>비밀번호</span>
+		<input type = "password" name="pwd"/><br><br>
+		
+		<span>이름</span>
+		<input type="text" name="irum"/><br><br>
+		<span>성별</span>
+		<input type="radio" name="gender" value="남자"/>
+		<span>남자</span>
+		<input type="radio" name="gender" value="여자"/>
+		<span>여자</span>
+		<br><br>
+		
+		<span>과일</span>
+		<input type="checkbox" name="fruit" value="사과"/>
+		<span>사과</span>
+		<input type="checkbox" name="fruit" value="딸기"/>
+		<span>딸기</span>
+		<input type="checkbox" name="fruit" value="배"/>
+		<span>배</span>
+		<input type="checkbox" name="fruit" value="메론"/>
+		<span>메론</span>
+		<br><br>
+		
+		
+		<!--  submit & reset 버튼은 이벤트를 포함한다. -->
+		<input type="submit" value="전송"/>
+		<input type="reset" value="취소"/>
+		
+	</form>
+	<br><br>
+	
+	<h3>페이지 이동</h3>
+	<ol>
+		<li>
+			<a href="https://www.naver.com">네이버 이동</a>
+		</li>
+		<li>
+			<a href="http://www.google.com?su=9&value=20">구글 이동</a>
+		</li>		
+	</ol>
+	
+
+</body>
+</html>

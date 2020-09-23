@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function sub() {
+			var arr=new Array();
+			
+			/*  */
+			var first=document.getElementById("first");
+			var firstFather=first.parentNode; // id가 father인 div 태그 : nodeType=1, nodeName="div", nodeValue=null
+			arr.push(firstFather.nodeType+" "+firstFather.nodeName+" "+firstFather.nodeValue); // Enter는 자식이 되지만 부모가 되지는 않는다.
+			
+			var grandFather=first.parentNode.parentNode; // id가 grandfather인 div 태그 : nodeType=1, nodeName="div", nodeValue=null
+			arr.push(grandFather.nodeType+" "+grandFather.nodeName+" "+grandFather.nodeValue);
+			
+			var body=first.parentNode.parentNode.parentNode;
+			arr.push(body.nodeType+" "+body.nodeName+" "+body.nodeValue);
+			
+			alert(arr.join("\n"));
+		}
+	
+	</script>
+</head>
+<body onload="sub()">
+	
+	<div id="grandfather">
+		<div id="father">
+			<span id="first">첫째입니다.</span>
+		</div>
+	</div>
+</body>
+</html>
